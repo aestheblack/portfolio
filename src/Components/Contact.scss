@@ -1,0 +1,28 @@
+.contact {
+    ul {
+        li {
+            a {
+                svg {
+                    fill: #1C1E22;
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .contact {
+        ul {
+            li {
+                a {
+                    svg {
+                        width: 65px;
+                        height: 65px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    overflow-x: hidden;
+    background-color: #1C1E22;
+    font-family: 'Poppins' !important;
+}
+
+.circleBox {
+    display: flex;
+    column-gap: 5px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+.circleBox .circle {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.circleBox .circle.red {
+    background-color: #FF5F56;
+}
+
+.circleBox .circle.yellow {
+    background-color: #FFBD2E;
+}
+
+.circleBox .circle.green {
+    background-color: #27C93F;
+}
+
+.element {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    z-index: -1;
+    border-radius: 50%;
+    filter: blur(700px);
+    background: conic-gradient(from 90deg, #00FFE0, #7000FF);
+}
+
+@media (min-width: 768px) {
+    .element {
+        width: 700px;
+        height: 700px;
+    }
+}
+
+.rectangle {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: blur(700px);
+    background: conic-gradient(#00FFE0, #7000FF);
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 0;
+    /* width: 5px; */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#00FFE0, #7000FF);
+}
